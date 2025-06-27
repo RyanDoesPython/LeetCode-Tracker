@@ -14,7 +14,7 @@ const bestStreakText = document.getElementById("bestStreak");
 
 let goal = 100;
 
-fetch("http://localhost:3000/api/cards")
+fetch("https://leetcode-tracker-m6ye.onrender.com/api/cards")
   .then(res => res.json())
   .then(cards => {
     updateStats(cards);

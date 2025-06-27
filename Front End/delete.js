@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       confirmBtn.addEventListener("click", () => {
         deleteCard(button.id);
 
-        fetch("http://localhost:3000/api/cards")
+        fetch("https://leetcode-tracker-m6ye.onrender.com/api/cards")
         .then(res => res.json())
         .then(cards => {
           loadCards(cards, sortSetting, filterSetting);
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function deleteCard(id){
-        fetch(`http://localhost:3000/api/cards/${id}`, {
+        fetch(`https://leetcode-tracker-m6ye.onrender.com/api/cards/${id}`, {
         method: "DELETE",
       })
       .then(response => {

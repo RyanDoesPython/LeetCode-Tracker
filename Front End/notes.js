@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = event.target.closest(".notesButton");
 
     if (button) {
-    fetch("http://localhost:3000/api/cards")
+    fetch("https://leetcode-tracker-m6ye.onrender.com/api/cards")
     .then(res => res.json())
     .then(cards => {
       const card = cards.find(c => String(c.problemNumber) === String(button.id));

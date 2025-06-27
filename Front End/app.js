@@ -2,7 +2,7 @@ const container = document.getElementById("cardContainer");
 let data;
 let sortSetting = "question time low to high";
 
-fetch("http://localhost:3000/api/cards")
+fetch("https://leetcode-tracker-m6ye.onrender.com/api/cards")
   .then(res => res.json())
   .then(cards => {
     loadCards(cards, sortSetting);
@@ -217,7 +217,7 @@ searchInput.addEventListener("input", (event) => {
 
 function search(){
   console.log(searchInput.value)
-  fetch("http://localhost:3000/api/cards")
+  fetch("https://leetcode-tracker-m6ye.onrender.com/api/cards")
   .then(res => res.json())
   .then(cards => {
     let data = cards.filter(a => a.name.includes(searchInput.value) || a.problemNumber.includes(searchInput.value))
