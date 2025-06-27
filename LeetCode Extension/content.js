@@ -15,23 +15,33 @@ document.addEventListener("keydown", (e) => {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "scrape") {
-    const matchingDivs = [
-      ...document.querySelectorAll("div.bg-fill-secondary.relative.px-2.py-1.gap-1")
-    ];
-    
-    const difficulty = matchingDivs.map(div => div.textContent.trim()).filter(a => a == "Hard" || a == "Easy" || a == "Medium")[0];
+    try {
+      const matchingDivs = [
+        ...document.querySelectorAll("div.bg-fill-secondary.relative.px-2.py-1.gap-1")
+      ];
+
+      const difficulty = matchingDivs
+        .map(div => div.textContent.trim())
+        .filter(a => a === "Hard" || a === "Easy" || a === "Medium")[0];
 
       const problemTitle = [...document.querySelectorAll("a.truncate.no-underline.whitespace-normal")]
-      .map(a => a.textContent.trim())
-      .filter(a => a.length > 0)
-      .flatMap(text => text.split(". "));
+        .map(a => a.textContent.trim())
+        .filter(a => a.length > 0)
+        .flatMap(text => text.split(". "));
 
-      const problemNumber = problemTitle[0]
-      const name = problemTitle[1]
-    
-    console.log(name)
+      const problemNumber = problemTitle[0];
+      const name = problemTitle[1];
 
-    sendResponse({ difficulty: difficulty, name: name, problemNumber: problemNumber });
+      console.log(name);
+
+      sendResponse({ difficulty, name, problemNumber });
+    } catch (err) {
+      console.error("Scraping failed:", err);
+      sendResponse({ error: err.toString() });
+    }
+
+    return true; // ✅ Keeps response channel open for async or delayed sends
   }
 });
+
 
