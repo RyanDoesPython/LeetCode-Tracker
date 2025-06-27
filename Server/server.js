@@ -1,6 +1,8 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const { connectDB } = require("./db");
+
 
 const app = express();
 
@@ -59,5 +61,5 @@ app.get("/api/cards", async (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running at http://localhost:${PORT}`);
+  console.log(`✅ Server running at ${PORT}`);
 });
