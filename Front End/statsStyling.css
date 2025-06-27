@@ -1,0 +1,71 @@
+#statsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px
+
+}
+
+.statLabel, .streakLabel {
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+.statLabel{
+    display: flex;
+    justify-content: space-between; /* Push items to opposite ends */
+}
+
+.goalProgressBar{
+    width: 100%;
+    height: 15px;
+    background-color: transparent;
+    margin: 10px 0px 20px 0px ;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+.goalProgressCompleted{
+    width: 63%;
+    height: 100%;
+    border-radius: 15px;
+    
+    background-color: #FAC31D;
+}
+.dailyStreakDiv{
+    display: flex;
+    align-items: center;
+}
+
+.easyText{
+  color: #48C6C2;
+}
+.mediumText{
+  color: #FAC31D
+}
+.hardText{
+  color: #F8615C;
+}
+.bottomMargin{
+    margin-bottom: 20px;
+}
+
+.statDivider{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-left: 0%;
+}
+
+.bestStreak{
+    color: #8C8C8C;
+    font-size: 16px;
+    margin-left: 40px;
+}
+.dailyStreak{
+    margin-left: 10px;
+}
+.timeText{
+    margin-bottom: 10px;
+}

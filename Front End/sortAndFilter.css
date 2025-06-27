@@ -1,0 +1,71 @@
+.sortOptions{
+    position: absolute;
+    width: 16%;
+    height: 18%;
+    background-color: #2B2B2B;
+    border-radius: 6px;
+    border: solid #5b5b5b 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.1);
+    left: 23%;;
+    top: 18%;
+    z-index: 100;
+    flex-direction: column;
+    padding: 5px;
+    
+    display: none
+}
+
+.sortOptionButton{
+    height: 25%;
+    border-radius: 6px;;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding-left: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sortOptionButton:not(.selected):hover {
+  background-color: #242424;
+}
+
+.filterButton, .sortButton{
+  height: 50%;
+  
+  border-radius: 30px;;
+  margin-left: 10px;
+  border: none;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filterButton{
+  padding-top: 5px;
+  aspect-ratio: 1;
+}
+.filterButton:hover, .sortButton:hover{
+  background-color: #272727;
+}
+.sortButton{
+    width: auto;
+    padding-left: 5px;
+    padding-right: 10px;
+    color: white;
+    font-size: 16px
+}
+.sortSVG{
+    margin-right: 5px
+}
+.svg{
+  height: 70%;
+  margin-right: 5px
+}
+.selected{
+    background-color: #5b5b5b;
+}

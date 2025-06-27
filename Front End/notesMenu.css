@@ -1,0 +1,18 @@
+.notesMenu{
+    display: none;   
+    width: auto;
+    max-width: 30%;
+    height: auto;
+    max-height: 80vh; /* optional: to avoid overflow */
+    overflow-y: auto;  /* scroll if text is too long */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #2B2B2B;
+    border: solid white 5px;
+    color: white; 
+    font-size: 20px;
+    border-radius: 15px;
+    position: absolute;
+    left: 700px;
+
+}

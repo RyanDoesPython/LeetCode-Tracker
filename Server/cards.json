@@ -1,0 +1,74 @@
+[
+  {
+    "notes": "Convert Base 2",
+    "time": "34",
+    "url": "https://leetcode.com/problems/convert-to-base-2/",
+    "difficulty": "Medium",
+    "name": "Convert to Base -2",
+    "problemNumber": "1017",
+    "date": "6-22-2025"
+  },
+  {
+    "notes": "Good INDICIES",
+    "time": "15",
+    "url": "https://leetcode.com/problems/find-all-good-indices/",
+    "difficulty": "Medium",
+    "name": "Find All Good Indices",
+    "problemNumber": "2420",
+    "date": "6-19-2025"
+  },
+  {
+    "notes": "Replace Employee",
+    "time": "24",
+    "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
+    "difficulty": "Easy",
+    "name": "Replace Employee ID With The Unique Identifier",
+    "problemNumber": "1378",
+    "date": "6-20-2025"
+  },
+  {
+    "notes": "Find the maximum sum of node values of the sigma delta neato weirdo sigma sigma sigma what the sigma oh ma gawsh holy guacomoli",
+    "time": "15",
+    "url": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/",
+    "difficulty": "Medium",
+    "name": "Find the Safest Path in a Grid",
+    "problemNumber": "2812",
+    "date": "6-11-2025"
+  },
+  {
+    "notes": "",
+    "time": "12",
+    "url": "https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/",
+    "difficulty": "Hard",
+    "name": "Count the Number of Arrays with K Matching Adjacent Elements",
+    "problemNumber": "3405",
+    "date": "6-14-2025"
+  },
+  {
+    "notes": "21",
+    "time": "21",
+    "url": "https://leetcode.com/problems/longest-common-prefix/description/",
+    "difficulty": "Easy",
+    "name": "Longest Common Prefix",
+    "problemNumber": "14",
+    "date": "6-24-2025"
+  },
+  {
+    "notes": "Easyyy ",
+    "time": "21",
+    "url": "https://leetcode.com/problems/3sum-closest/description/",
+    "difficulty": "Medium",
+    "name": "3Sum Closest",
+    "problemNumber": "16",
+    "date": "6-24-2025"
+  },
+  {
+    "notes": "this problem is cool",
+    "time": "21",
+    "url": "https://leetcode.com/problems/count-substrings-starting-and-ending-with-given-character/",
+    "difficulty": "Medium",
+    "name": "Count Substrings Starting and Ending with Given Character",
+    "problemNumber": "3084",
+    "date": "6-26-2025"
+  }
+]
