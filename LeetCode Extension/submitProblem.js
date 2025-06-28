@@ -14,7 +14,7 @@ submitButton.addEventListener("click", () => {
     const fullData = { ...userInputData, ...siteData };
     console.log("Combined data:", fullData);
 
-    fetch("http://localhost:3000/api/add-card", {
+    fetch("https://leetcode-tracker-m6ye.onrender.com/api/add-card", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
